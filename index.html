@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IDEA</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+</head>
+<body>
+
+    <div class="Argen">
+
+        
+    <label>
+
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+
+        <div class="slide">
+            <ul>
+                <li>Главная</li>
+                <li>О нас</li>
+                <li>Портфолио</li>
+                <li>Стоимость</li>
+                <li>Статьи</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+    </label>
+
+    <div class="wow">
+        <h2>IDEA !</h2>
+        <h1>ARGEN</h1>
+        <img src="https://static.tildacdn.pro/tild3531-6462-4135-a161-656333323331/giphy.gif" alt="">
+    </div>
+    <div class="header">
+        <h1>ARGEN</h1>
+        <button>online</button>
+        <h2>Создаю и практикуюс<br></h2>
+        <div class="nub">
+            <img src="https://static.tildacdn.pro/tild6535-6462-4739-b234-343961396561/image_3.gif" alt="">
+        </div>
+        <h3>я работую 24/7 на</h3>
+        <h4>сайте если </h4>
+        <h5>нужно обрашайтесь !</h5>
+        <h6>Узнайте стоимость вашего сайта прямо сейчас !!!</h6>
+        <div class="const">
+            <button>Узнать усоимщсть</button>
+        </div>
+    </div>
+    <div class="let">
+        <img src="https://static.tildacdn.pro/tild3531-6462-4135-a161-656333323331/giphy.gif" alt="">
+    </div>
+    <div class="var">
+        <img src="https://static.tildacdn.pro/tild3531-6462-4135-a161-656333323331/giphy.gif" alt="">
+    </div>
+    <div class="man">
+        <img src="https://optim.tildacdn.pro/tild6266-6632-4731-b261-396431623766/-/format/webp/Cover_copy_1.png" alt="">
+    </div>
+
+        <div class="div">
+            <h2>
+                #Продвижение  #Реклама  #Сайты  #Google  #Таргет #Ландинг #Домен #Сайты #Сайты #Продвижение #Реклама #Сайты #Google  #Таргет #Домен# </h2>   
+                <h1>#Гугл_реклама   #Продвижение_в_google
+                    #Создание_сайтов
+                    #Разработка_сайтов_
+                    #Интернет_магазин
+                    #Домен
+                    #Google
+                    #Таргет
+                    #Ландинг
+                    #Домен#</h1>
+        </div>
+
+        <div class="lop">
+            <h1>Не</h1>
+            <h2>сотрудничаем</h2>
+        </div>
+
+    <div class="pop">
+        <img src="https://optim.tildacdn.pro/tild3366-3661-4166-b734-613737633936/-/resize/230x/-/format/webp/18_1.png" alt="">
+    <div class="nav">
+        <img src="https://static.tildacdn.pro/tild3536-3266-4833-a234-336161643463/____closed_line.svg"alt="">
+        <div class="pul">
+            <img src="https://static.tildacdn.pro/tild3663-6266-4661-b137-326433646265/closed.svg" alt="">
+        </div>
+       </div>
+    </div>
+        <div class="red">
+            <img src="https://static.tildacdn.pro/tild6264-6262-4134-b537-343338643237/giphy-6.gif" alt="">
+            <h2>Благодарим за понимание</h2>
+        </div>
+
+        <div class="cursor" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+        
+    
+        <!-- <div class="cursor"></div>
+        <div class="aura"></div> -->
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    
+        <script>
+            // const cursorDot = document.querySelector("[data-cursor-dot]");
+            // const cursorOutline = document.querySelector("[data-cursor-outline]");
+    
+            // window.addEventListener("mousemove", function (e) {
+            //     const posX = e.clientX;
+            //     const posY = e.clientY;
+    
+            //     cursorDot.style.left = `${posX}px`;
+            //     cursorDot.style.top = `${posY}px`;
+    
+            //     // cursorOutline.style.left = `${posX}px`;
+            //     // cursorOutline.style.top = `${posY}px`;
+    
+            //     cursorOutline.animate({
+            //         left: `${posX}px`,
+            //         top: `${posY}px`
+            //     }, {duration: 500, fill: "forwar"})
+            // });
+    
+    
+            const cursor = document.querySelector('.cursor');
+    
+            document.addEventListener('mousemove', e => {
+                // console.log(e);
+                cursor.setAttribute("style", "top: "+(e.pageY - 18)+"px; left: "+(e.pageX - 18)+"px;");
+            })
+    
+            document.addEventListener('click', () => {
+                cursor.classList.add("expand");
+    
+                setTimeout(() => {
+                    cursor.classList.remove("expand");
+                }, 200)
+            })
+
+     
+
+
+
+            const manImg = document.querySelector('.man img');
+
+// Максимальное смещение от центра курсора
+const maxOffset = 150;
+
+document.addEventListener('mousemove', (e) => {
+    // Получаем текущую позицию изображения
+    const imgRect = manImg.getBoundingClientRect();
+    const imgCenterX = imgRect.left + imgRect.width / 8;
+    const imgCenterY = imgRect.top + imgRect.height / 10;
+
+    // Рассчитываем разницу между курсором и центром изображения
+    const deltaX = e.pageX - imgCenterX;
+    const deltaY = e.pageY - imgCenterY;
+
+    // Ограничиваем движение в пределах maxOffset
+    const moveX = Math.min(Math.max(deltaX, -maxOffset), maxOffset);
+    const moveY = Math.min(Math.max(deltaY, -maxOffset), maxOffset);
+
+    // Обновляем положение изображения с учётом ограничений
+    manImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+
+
+const varImg = document.querySelector('.var img');
+
+// Максимальное смещение от центра курсора
+const varOffset = 1;
+
+document.addEventListener('mousemove', (e) => {
+    // Получаем текущую позицию изображения
+    const imgRect = varImg.getBoundingClientRect();
+    const imgCenterX = imgRect.left + imgRect.width / -1;
+    const imgCenterY = imgRect.top + imgRect.height /-1;
+
+    // Рассчитываем разницу между курсором и центром изображения
+    const deltaX = e.pageX - imgCenterX;
+    const deltaY = e.pageY - imgCenterY;
+
+    // Ограничиваем движение в пределах maxOffset
+    const moveX = Math.min(Math.max(deltaX, -maxOffset), maxOffset);
+    const moveY = Math.min(Math.max(deltaY, -maxOffset), maxOffset);
+
+    // Обновляем положение изображения с учётом ограничений
+    varImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+
+
+const letImg = document.querySelector('.let img');
+
+// Максимальное смещение от центра курсора
+const letOffset = 1;
+
+document.addEventListener('mousemove', (e) => {
+    // Получаем текущую позицию изображения
+    const imgRect = letImg.getBoundingClientRect();
+    const imgCenterX = imgRect.left + imgRect.width / 1;
+    const imgCenterY = imgRect.top + imgRect.height / 1;
+
+    // Рассчитываем разницу между курсором и центром изображения
+    const deltaX = e.pageX - imgCenterX;
+    const deltaY = e.pageY - imgCenterY;
+
+    // Ограничиваем движение в пределах maxOffset
+    const moveX = Math.min(Math.max(deltaX, -maxOffset), maxOffset);
+    const moveY = Math.min(Math.max(deltaY, -maxOffset), maxOffset);
+
+    // Обновляем положение изображения с учётом ограничений
+    letImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
+
+        </script>
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    </div>
+</body>
+</html>
